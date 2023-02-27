@@ -94,12 +94,12 @@ function TeAmo() {
   return (
     <>
       <Header />
-      <div className="mainContainer">
+      <div className="main-container">
         <div>
-          <div className="memoryText">
-            <h1 className="memoryTitle">¿LISTA PARA DESCUBRIRLO?</h1>
+          <div className="memory-text">
+            <h1 className="memory-title">¿LISTA PARA DESCUBRIRLO?</h1>
           </div>
-          <div className="cardsContainer">
+          <div className="cards-container">
             {
               cards.map((card, index,) => (
                 <Cards

@@ -29,10 +29,10 @@ const Cards = ({name, number, frontFace, flipCard, unflippedCard, disabledCards}
   }
   return(
     <>
-    <div className="memoryCard">
+    <div className="memory-card">
       <ReactCardFlip isFlipped={isFlip}>
-        <img className="cardImage"  src={ejemplo} onClick={hasEvent ? handleClick: null}/>
-        <img className="cardImage" src={frontFace} onClick={hasEvent ? handleClick: null}/>
+        <img className="card-image"  src={ejemplo} onClick={hasEvent ? handleClick: null}/>
+        <img className="card-image" src={frontFace} onClick={hasEvent ? handleClick: null}/>
       </ReactCardFlip>
     </div>
 

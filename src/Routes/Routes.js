@@ -4,11 +4,14 @@ import Main from "../Pages/Main";
 import Login from "../Pages/Login";
 import Inicio from "../Pages/Inicio/Index";
 import TeAmo from "../Pages/Teamo/Index";
+import Felicidad from "../Pages/Felicidad/Index";
+import TeInteresa from "../Pages/Teinteresa/Index";
+
+
 
 /* 
-import Felicidad from "../pages/Felicidad";
 import AboutUs from "../pages/AboutUs";
-import TeInteresa from "../pages/TeInteresa"; */
+ */
 
 
 
@@ -28,14 +31,15 @@ function RoutesApp() {
         <Routes>
           <Route path="/TeAmo" element={<TeAmo />} />
         </Routes>
-     {/*   
-       
-        <Routes>
-          <Route path="/Te-Amo" element={<TeAmo />} />
-        </Routes>
         <Routes>
           <Route path="/Felicidad" element={<Felicidad />} />
         </Routes>
+        <Routes>
+          <Route path="/Te-interesa" element={<TeInteresa />} />
+        </Routes>
+     {/*   
+      
+       
         <Routes>
           <Route path="/Te-interesa" element={<TeInteresa />} />
         </Routes>

@@ -1,0 +1,34 @@
+@import "../../variables.scss";
+
+* {
+  @extend .general
+}
+
+.relative{
+  position: relative;
+}
+.informacionPPT{
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  top: 170px;
+  right: -200px;
+  border-left: none;
+  padding: 5px;
+  background-color: #8d49257c;
+  border-radius: 0 10px 10px 0;
+}
+.estadisticasPPT{
+  align-items: center;
+  display: flex;
+  border: 1px solid $secondary-colr;
+  height: 137px;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: black;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: $lora;
+  box-sizing: border-box;
+
+}

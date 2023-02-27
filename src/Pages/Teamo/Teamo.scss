@@ -3,7 +3,7 @@
 * {
   @extend .general
 }
-.mainContainer{
+.main-container{
   position: relative;
   background-color: #fadbd9;
   min-height: 93vh;
@@ -12,7 +12,7 @@
   display: flex;
   padding: 20px 50px ;
 }
-.cardsContainer{
+.cards-container{
   width: 410px;
   height: 490px;
   padding: 5px;
@@ -23,10 +23,10 @@
   margin-right: 300px;
 
 }
-.memoryText{
+.memory-text{
   padding: 9px;
 }
-.memoryTitle{
+.memory-title{
   width: 400px;
   text-align: center;
   font-family: $lora;
@@ -34,7 +34,7 @@
   color: $secondary-colr;
 
 }
-.memorySubTitle{
+.memory-subTitle{
   font-size: 13px;
   font-family: $lora;
   color: $secondary-colr;

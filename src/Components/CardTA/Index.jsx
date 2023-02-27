@@ -7,11 +7,11 @@ const CardTA = ({ aciertos }) => {
   return (
     <>
       <div className="absolute">
-        <div className={aciertos === 8 ? "theCard flipped" : "theCard"}>
-          <div className="theFront">
+        <div className={aciertos === 8 ? "the-card flipped" : "the-card"}>
+          <div className="the-front">
             <img className="imgMsg" src={ejemplo} />
           </div>
-          <div className="theBack">
+          <div className="the-back">
             <h2 className="titleMsg">POR SUPUESTO...</h2>
             <p className="pMsg">Por supuesto que lo hago, no hay una manera de negarlo aunque quiera.
               Te amo cuando nos reímos sin parar, cuando nos tomamos de la mano y
