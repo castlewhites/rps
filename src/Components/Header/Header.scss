@@ -6,7 +6,7 @@
 
 .header-container {
   background-color: #f8afa6;
-  height: 70px;
+  height: 60px;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -28,10 +28,11 @@
       text-transform: uppercase;
       padding: 10px;
       transition: 0.3s;
-      font-size: 0.95em;
+      font-size: 0.9em;
     }
     .link:hover{
      font-size: 1em;
+     color: #ffffd5;
     }
   }
 }

@@ -9,6 +9,7 @@ function Header() {
         <nav className="nav">
           <ul>
             <li><Link className="link" to="/Inicio">Inicio</Link> </li>
+            <li><Link className="link" to="/Inicio">About us</Link> </li>
             <li><Link className="link" to="/"> Salir</Link></li>
           </ul>
         </nav>

@@ -1,0 +1,203 @@
+@import "../../variables.scss";
+
+* {
+  @extend .general
+}
+
+.main{
+  background-color: #fadcd9;
+  min-height: 92.2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-container{
+    position: relative;
+    display: flex;
+    padding: 40px 40px;
+    align-items: center;
+    justify-content: center ;
+    flex-wrap: wrap;
+    gap: 80px;
+    & .card{
+      position: relative;
+      width: 350px;
+      height: 180px;
+      background-color: #95b8f6;
+      transition: 0.5s;
+    }
+    & .card:hover{
+      height: 450px;
+    }
+   
+  }
+}
+.card {
+  position: absolute;
+  inset: 0;
+  background-color: #95b8f6;
+
+}
+.lines{
+  position: absolute;
+  inset: 0;
+  background-color: $secondary-colr;
+  overflow: hidden;
+}
+
+.lines::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 120px;
+  background: linear-gradient(transparent,  #f9f1f0,#f9f1f0,#f9f1f0, transparent);
+  animation: animate 6s linear infinite;
+  animation-play-state: paused;
+}
+
+.card:hover .lines::before{
+  animation-play-state: running;
+}
+
+@keyframes animate{
+  0%{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.card:hover .lines::after{
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background : $primary-color;
+}
+.lines::after{
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: $primary-color;
+}
+.imgBx{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 50%;
+  top: -60px;
+  transform: translateX(-50%);
+  background-color: #91512f;
+  transition: 0.5s;
+  z-index: 10;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.card:hover .imgBx{
+  width: 200px;
+  height: 200px;
+  top: 25px;
+}
+.imgBx::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 70px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(transparent, #f9f1f0,#f9f1f0,#f9f1f0, transparent);
+  animation: animate2 9s linear infinite;
+  animation-play-state: paused;
+
+ 
+}
+.card:hover .imgBx::before{
+  animation-play-state: running;
+}
+
+@keyframes animate2
+{
+  0%{
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100%{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+.imgBx::after{
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background-color: $primary-color;
+ 
+}
+.imgBx img{
+  width: 100px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.5;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  
+}
+.details{
+  padding: 35px 20px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(150px);
+  transition: 0.5s;
+
+}
+.card:hover .details{
+  transform: translateY(10px);
+  transition: 0.5s;
+
+}
+h2{
+  font-weight: 600;
+  color: $secondary-colr;
+  line-height: 1.2em;
+  
+  
+}
+.pMain{
+  margin-top: 10px;
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 14px;
+  color: #91512fc4;
+}
+.card:hover .pMain{
+  opacity: 1;
+}
+.linkCard{
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #f79489 ;
+  margin-top: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.card:hover .linkCard{
+  opacity: 1;
+}
+
