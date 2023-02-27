@@ -3,21 +3,26 @@ import { Link } from "react-router-dom";
 import Header from "../../Components/Header/Index";
 import "../Teamo/Teamo.scss"
 
-import CardTi from "../../Components/CardTA/Index";
-
-let movimientos = 0;
-let aciertos = 0;
-let tiempo = false;
+import CardHG from "../../Components/CardHG/Index";
 
 
 
 function TeInteresa() {
   const palabras = ["hermosa", "princesa", "mia", "brillante"];
+  const [win, setWin] = useState(0);
+  
 
 
   const [palabra, setPalabra] = useState(palabras[Math.floor(Math.random() * palabras.length)].toUpperCase());
   const [intentos, setIntentos] = useState(6);
   const [letrasAdivinadas, setLetrasAdivinadas] = useState([]);
+
+  useEffect(() => {
+    const letrasCorrectas = letrasAdivinadas.filter(letra => palabra.includes(letra));
+    if (letrasCorrectas.length === palabra.length) {
+      setWin(1)
+    }
+  }, [letrasAdivinadas, palabra]);
 
   const manejarIntento = (letra) => {
     if (!letrasAdivinadas.includes(letra)) {
@@ -31,7 +36,7 @@ function TeInteresa() {
     window.location.reload()
 
   }
-  console.log();
+  console.log(win);
 
   return (
     <>
@@ -39,7 +44,7 @@ function TeInteresa() {
       <div className="main-container">
         <div>
           <div className="memory-text">
-            <h1 className="memory-title">¿LISTA PARA DESCUBRIRLO?</h1>
+            <h1 className="memory-title">¿ESTÁS SEGURA?</h1>
           </div>
           <div className="cards-container">
             <div className="">
@@ -79,8 +84,8 @@ function TeInteresa() {
           </div>
         </div>
         <div className="sorpresa">
-          <CardTi
-            aciertos={aciertos}
+          <CardHG
+            aciertos={win}
             title="POR SUPUESTO..."
           />
         </div>

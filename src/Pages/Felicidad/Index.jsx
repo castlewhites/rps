@@ -21,7 +21,9 @@ function Felicidad() {
 
   })
 
-
+  useEffect(() => {
+    
+  }, [])
 
   useEffect(() => {
     botInt(gameState, setGameState)
