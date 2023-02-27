@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Inicio.scss"
 
-import Header from "../../Components/Header/index";
+import Header from "../../Components/Header/Index";
 import foto from "../../assets/COMERCIOS.svg"
 import pareja from "../../assets/pareja.png"
 import pareja2 from "../../assets/pareja2.png"
@@ -27,7 +27,7 @@ function Inicio() {
               <div className="details">
                 <h2>¿Te amo?</h2>
                 <p className="pMain">Es una de las preguntas que me haces con más frecuencia. Espero que pueda aclarar la duda.. </p>
-                <Link className="linkCard" to="/Te-Amo"> Ver más</Link>
+                <Link className="linkCard" to="/TeAmo"> Ver más</Link>
               </div>
             </div>
           </div>

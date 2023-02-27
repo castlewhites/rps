@@ -1,0 +1,67 @@
+@import "../../variables.scss";
+
+* {
+  @extend .general
+}
+.mainContainer{
+  position: relative;
+  background-color: #fadbd9;
+  min-height: 93vh;
+  justify-content:space-around;
+  align-items: center;
+  display: flex;
+  padding: 20px 50px ;
+}
+.cardsContainer{
+  width: 410px;
+  height: 490px;
+  padding: 5px;
+  border-radius: 10px;
+/*   background-color: #37ddfa71 ; */
+  position: relative;
+  background-color: #8d49257c;
+  margin-right: 300px;
+
+}
+.memoryText{
+  padding: 9px;
+}
+.memoryTitle{
+  width: 400px;
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-size: 45px;
+  color: #8d4925;
+
+}
+.memorySubTitle{
+  font-size: 13px;
+  font-family: 'Lora', serif;
+  color: #8d4925;
+
+}
+.informacion{
+ /*  background-color:  #37ddfa71 ; */
+  width: 230px;
+  height: 267px;
+  position: absolute;
+  top: 120px;
+  right: -230px;
+  padding: 5px;
+  background-color: #8d49257c;
+  border-radius: 0 10px 10px 0;
+}
+.estadisticas{
+  align-items: center;
+  display: flex;
+  border: 2px solid #8d4925;
+  height: 123px;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: black;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: 'Lora', serif;
+  box-sizing: border-box;
+
+}

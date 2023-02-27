@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from "../Pages/Main";
 import Login from "../Pages/Login";
 import Inicio from "../Pages/Inicio/Index";
+import TeAmo from "../Pages/Teamo/Index";
+
 /* 
-import TeAmo from "../pages/TeAmo";
 import Felicidad from "../pages/Felicidad";
 import AboutUs from "../pages/AboutUs";
 import TeInteresa from "../pages/TeInteresa"; */
@@ -23,6 +24,9 @@ function RoutesApp() {
         </Routes>
         <Routes>
           <Route path="/Inicio" element={<Inicio />} />
+        </Routes>
+        <Routes>
+          <Route path="/TeAmo" element={<TeAmo />} />
         </Routes>
      {/*   
        

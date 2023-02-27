@@ -172,6 +172,7 @@ h2{
   font-weight: 600;
   color: $secondary-colr;
   line-height: 1.2em;
+  font-family: $lora;
   
   
 }
@@ -181,6 +182,7 @@ h2{
   transition: 0.5s;
   font-size: 14px;
   color: #91512fc4;
+  font-family: $open;
 }
 .card:hover .pMain{
   opacity: 1;
